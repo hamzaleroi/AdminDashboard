@@ -1,0 +1,28 @@
+/**
+ * Created by Noureddine on 06/10/2017.
+ */
+(function ($) {
+    'use strict';
+
+    $('#not-chat').fadeIn();
+    $('#chat').fadeOut();
+
+})(jQuery);
+
+
+
+
+function joinUs() {
+    'use strict';
+    $('#not-chat').fadeOut('slow');
+    $('#chat').fadeIn('slow');
+    $('#messages').html("");
+    $('#convForm .option').click();
+
+    setTimeout(function () {
+        $(".message.from").remove();
+    }, 300);
+
+}
+
+
